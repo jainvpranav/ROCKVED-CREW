@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ROCKVED</title>
+  <link rel="shortcut icon" href="../assets/dashboard/waving-hand.png" type="image/x-icon">
+  <link rel="stylesheet" href="../css/dashboard.css">
+  <link rel="stylesheet" href="../toast/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+
+<body>
+  <ul class="notifications"></ul>
+  <main>
+
+    <!-- Container for videos  -->
+    <div class="extracontainer popup" id="extracontainer">
+      <video autoplay controls playsinline id="video">
+          <source src="" type="video/mp4">
+      </video>
+      <button class="close" id="close"><ion-icon name="close-outline"></ion-icon></button>
+    </div>
+    <!-- Container for game  -->
+    <div class="extracontainer popup" id="extracontainer2">
+      <button class="close" id="close2"><ion-icon name="close-outline"></ion-icon></button>
+    </div>
+    <!-- Container for new pic  -->
+    <div class="popup extracontainer3" id="extracontainer3">
+      <input type="file" id="newimgfile" />
+      <button type="submit" id="uploadimage">Upload image</button>
+    </div>
+
+    <div class="badges" id="badges">
+      <button class="close" id="close3"><ion-icon name="close-outline"></ion-icon></button>
+      <img src="../assets/dashboard/badge.png" alt="Badge" class="badgeimg closebi" id="closebiimg" />
+    </div>
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+            <img src="" alt="Profile" width="80" id="profilepic">
+              <div class="icon-box">
+                <ion-icon name="pencil-outline" id="uploadnewpic"></ion-icon>
+              </div>
+        </figure>
+       
+        <div class="info-content">
+          <h1 class="name" id="playername"></h1>
+          <p class="title">Novice🏆</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>About you</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="" class="contact-link" id="playeremail"></a>
+            </div>
+
+          </li>
+
+          <li class="contact-item" id="badgesi">
+
+            <div class="icon-box">
+              <ion-icon name="shield-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p style="font-weight: 900;" class="contact-title">Badges</p>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="exit-outline" id="exit"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <!-- <p class="contact-title">Logout</p> -->
+              <h4 style="color: white;">Logout</h4>
+              <!-- <a href="tel:+12133522795" class="contact-link">+1 (213) 352-2795</a> -->
+            </div>
+
+          </li>
+        </ul>
+
+        <div class="separator"></div>
+      </div>
+
+    </aside>
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>Home</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Journey</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Leaderboard</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Learning</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Games</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Feedback</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #featured
+      -->
+
+      <article class="about  active" data-page="home">
+
+        <header>
+          <h2 class="h2 article-title">Home</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            Welcome folks to this virtual Gurukul!
+            Here you can find the most interesting and innovative ideas from our community.
+            Feel free to explore, learn something new or even contribute your own thoughts.
+          </p>
+
+          <p>
+            Learn & Play at the same time.
+            Check out the Leaderboard & learn more to be at the top.
+          </p>
+        </section>
+        <section class="about-text">
+          <video controls style="width: auto; height: 60vh" >
+            <source src="../assets/videos/intro.mp4" >
+          </video>
+        </section>
+        <!-- 
+          - VR
+        -->
+        <section class="about-text">
+          <h3 class="h3 testimonials-title">VR Zone</h3>
+          <div class="vr">
+                <div class="vr-img">
+                  <img src="../assets/dashboard/vr.png" alt="">
+                </div>
+                <div class="vr-text">
+                  Download our newest VR Game and use your Google Cardboard V R for a better experience.
+                </div>
+                <div style="display: flex; flex-direction: row; gap: 10px;">
+                  <div class="icon-box vricon">
+                    <a href="../assets/vr3d_1.apk" Download="VRGame" id="downloadgame"><ion-icon name="download-outline" id="downloadgame"></ion-icon></a>
+                  </div>
+                  <div class="icon-box vricon">
+                    <a href="../assets/videos/HomeVR.mp4" Download="HomeVR" id="downloadgame"><ion-icon name="play-outline" id="downloadgame"></ion-icon></a>
+                  </div>
+                </div>
+          </div>
+        </section>
+
+        <!--
+          - Featured Games
+        -->
+
+        <!-- <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Games</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="../assets/dashboard/waving-hand.png" alt="Game1" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Game1</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio eos quia vitae tempore? Omnis dolorum cumque maxime pariatur eaque impedit maiores sapiente quos a, repellat enim! Delectus ullam doloremque dolor?
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="../assets/dashboard/waving-hand.png" alt="Game2" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Game2</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi corrupti, aut nesciunt nam iste asperiores eveniet minus, veritatis ullam beatae commodi odio, quidem id vero cumque fuga dolorum tempore magnam.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="../assets/dashboard/waving-hand.png" alt="Game3" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Game3</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quas atque vitae cupiditate maiores voluptatum ea itaque sit tenetur, eos voluptas veritatis quod quisquam harum consequatur soluta eveniet nihil recusandae.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+          </ul>
+
+        </section> -->
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="../assets/dashboard/waving-hand.png" alt="asd" width="80" data-modal-img>
+              </figure>
+
+              <!-- <img src="../assets/dashboard/waving-hand.png" alt="quote icon"> -->
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Game1</h4>
+
+              <time datetime="2021-06-14">14 March, 2023</time>
+
+              <div data-modal-text>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, officiis incidunt ad nam ut accusantium pariatur porro qui modi omnis cupiditate libero consequatur quidem nobis maiores sit unde iure nesciunt?
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+
+        <!--
+          - clients
+        -->
+
+      </article>
+
+      <!--
+        -#pathway
+      -->
+      <article class="about" data-page="journey">
+
+        <header>
+          <h2 class="h2 article-title">Journey</h2>
+        </header>
+
+        <section class="about-text">
+          
+        </section>
+        <!-- 
+          - VR
+        -->
+        <section class="about-text">
+          <div class="journey" id="journey">
+            <div class="planets">
+              <img src="../assets/dashboard/earth.png" alt="Earth" class="plan earth glow" id="earth">
+              <label for="planet2" class="earthlabel">Earth</label>
+              <img src="../assets/dashboard/full-moon.png" alt="Moon" class="plan moon" id="moon">
+              <label for="moon" class="moonlabel">Moon</label>
+              <img src="../assets/dashboard/mars.png" alt="Mars" class="plan mars" id="mars">
+              <label for="mars" class="marslabel">Mars</label>
+              <img src="../assets/dashboard/sun.png" alt="Sun" class="plan sun" id="sun">
+              <label for="sun" class="sunlabel">Sun</label>
+              <div id="games"></div>
+              <img src="../assets/dashboard/rocket.gif" alt="" class="rocket" id="rocket">
+            </div>
+            <div class="astro" id="astro">             
+            </div>
+            
+          </div>
+        </section>        
+      </article>
+
+
+
+      <!--
+        - #leaderboard
+      -->
+
+      <article class="resume" data-page="leaderboard">
+
+        <header>
+          <h2 class="h2 article-title" style="z-index: 105;">Leaderboard</h2>
+        </header>
+        <section class="leaderboardtrophy">
+          <div class="trophy">
+            <img src="../assets/leaderboard/silver-cup.png" alt="Silver Cup" class="silvercup">
+            <img src="../assets/leaderboard/gold-cup.png" alt="Gold Cup" class="goldcup">
+            <img src="../assets/leaderboard/bronze-cup.png" alt="Bronze Cup" class="bronzecup">
+          </div>
+          <div class="leaderboardname">
+            <h3 class="leadername" id="secondleader">Second</h3>
+            <h3 class="leadername" id="firstleader">First</h3>
+            <h3 class="leadername" id="thirdleader">Third</h3>
+          </div>
+          <div class="scorerank">
+            <h1>Score</h1>
+            <h1>Rank</h1>
+            <!-- <h1>Progress</h1> -->
+          </div>
+          <div class="scorerankval">
+            <h1 id="score"></h1>
+            <h1 id="rank"></h1>
+            <!-- <h1 id="progress"></h1> -->
+          </div>
+        </section>
+      </article>
+
+
+
+
+
+      <!--
+        - #learning
+      -->
+
+      <article class="portfolio" data-page="learning">
+
+        <header>
+          <h2 class="h2 article-title">Learning</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Ekadhiken-Purvena</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Nikhilam-Navatacharamam-Dasatah</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Urdhva-tiryagbhyam</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Ekadhiken-Purvena</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Nikhilam-Navatacharamam-Dasatah</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Urdhva-tiryagbhyam</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" id="learn1" data-filter-item data-category="ekadhiken-purvena">
+              <a href="#">
+
+                <figure class="project-img">
+                  <img src="../assets/dashboard/ep.png" alt="fundo" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Vid1</h3>
+
+                <p class="project-category">Ekadhiken Purvena</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" id="learn2"  data-filter-item data-category="ekadhiken-purvena">
+              <a href="#">
+
+                <figure class="project-img">
+                  <img src="../assets/dashboard/ep2.png" alt="dsm." loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Vid2</h3>
+
+                <p class="project-category">Ekadhiken Purvena</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" id="learn3" data-filter-item data-category="nikhilam-navatacharamam-dasatah">
+              <a href="#">
+                <figure class="project-img" >
+                  <img src="../assets/dashboard/nk.png" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Vid1</h3>
+
+                <p class="project-category">Nikhilam Navatacharamam Dasatah</p>
+
+              </a>
+            </li>
+
+              <a href="#">
+
+                <figure class="project-img">
+                  <img src="../assets/dashboard/nk2.png" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Vid2</h3>
+
+                <p class="project-category">Nikhilam Navatacharamam Dasatah</p>
+
+              </a>
+            </li> 
+
+            <li class="project-item  active" id="learn5" data-filter-item data-category="urdhva-tiryagbhyam">
+              <a href="#">
+
+                <figure class="project-img">
+                  <img src="../assets/dashboard/ut.png" alt="brawlhalla" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Vid1</h3>
+
+                <p class="project-category">Urdhva-tiryagbhyam</p>
+
+              </a>
+            </li>           
+          </ul>
+
+        </section>
+
+      </article>
+
+      <!--
+        - #games
+      -->
+
+      <article class="blog" data-page="games">
+
+        <header>
+          <h2 class="h2 article-title">Games</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item" id="game1">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="../assets/dashboard/flappybird.png" alt="Design conferences in 2022" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                 
+
+                  <h3 class="h3 blog-item-title">Flappy Bird</h3>
+
+                  <p class="blog-text">
+                    Flappy Bird is built for understanding Nikhilam-Navatacharamam-Dasatah.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="../assets/dashboard/rocketlaunch.png" alt="Best fonts every designer" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+
+                  <h3 class="h3 blog-item-title">Rocket Launch</h3>
+
+                  <p class="blog-text">
+                    Rocket Launch is for understanding Ekadhiken-Purvena
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="../assets/dashboard/atomgame.png" alt="Design digest #80" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                 
+
+                  <h3 class="h3 blog-item-title">Atom Game</h3>
+
+                  <p class="blog-text">
+                   Atom Game is used for Ekadhiken-Purvena
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="../assets/dashboard/candlegame.png" alt="UI interactions of the week" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  
+
+                  <h3 class="h3 blog-item-title">Candle Game</h3>
+
+                  <p class="blog-text">
+                    Candle Game is for Urdhva-tiryagbhyam
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+          </ul>
+
+        </section>
+
+      </article>
+
+
+      <!--
+        - #feedback
+      -->
+
+      <article class="contact" data-page="feedback">
+
+        <header>
+          <h2 class="h2 article-title">Feedback</h2>
+        </header>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" class="form-input" placeholder="Full name" id="feedbackname" required data-form-input>
+
+              <input type="email"class="form-input" placeholder="Email address" id="feedbackemail" required data-form-input>
+            </div>
+
+            <textarea class="form-input" placeholder="Your Message" id="feedbackmessage" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" id="feedbacksubmit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="../js/dashboard.js" type="module"></script>
+  <script src="../js/dashboardprofile.js" type="module"></script>
+  <script src="https://kit.fontawesome.com/59edc03056.js" crossorigin="anonymous"></script>
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
