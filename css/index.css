@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Pixelify+Sans:wght@600&family=Poppins:wght@300&display=swap');
+        * {
+            margin: 0;
+            padding: 0;   
+            box-sizing: border-box;
+            user-select: none;
+            -webkit-user-drag: none;
+            font-family: 'Montserrat';
+        }
+        body {
+            background-image: url('./bg.jpg');
+            background-color: #000000;
+            color: white;
+        }
+        .pathway {
+            position: absolute;
+            right: 0;
+            height: 100vh;
+        }
+        .rockved {
+            position: absolute;
+            top: 10%;
+            left: 5%;
+            font-size: 8em;
+            /* font-family: 'Pixelify Sans'; */
+        }
+        .para1 {
+            position: absolute;
+            top: 45%;
+            left: 5%;
+        }
+        .launch {
+            cursor: pointer;
+            position: absolute;
+            bottom: 20%;
+            left: 20%;
+            padding: 20px;
+            border-radius: 50%;
+            font-size: 1rem;
+            background-color: #ff3131;
+            border: none;
+            color: white;
+        }
+
+        .gif {
+            width: 150px;
+            height: 150px;
+            z-index: 2;
+        }
+        .moon {
+            position: absolute;
+            /* top: 10%; */
+            right: 10%;
+        }
+        .uranus {
+            position: absolute;
+            top: 30%;
+            right: 8%;
+        }
+        .galaxy {
+            position: absolute;
+            bottom: 25%;
+            right: 20%;
+        }
+        .blackhole {
+            position: absolute;
+            bottom: 1%;
+            right: 5%;
+        }
+        .telescope {
+            position: absolute;
+            bottom: 22%;
+            right: 5%;
+            transform: scaleX(-1);
+        }
+        .science-fiction {
+            position: absolute;
+            bottom: 50%;
+            right: 20%;
+        }
+        .rocket {
+            position: absolute;
+            right: 20%;
+            bottom: 0;
+        }
+        .astronaut {
+            position: absolute;
+            top: 5%;
+            right: 20%;
+        }
+        @keyframes fly {
+            to {
+                bottom: 100%;
+                right: 20%;
+                rotate: -75deg;
+            }
+
+        }
+
+        h2 {
+            color: #fff;
+            font-size: 2rem;
+            font-weight: 600;
+        }
+
+        h2 span {
+            color:#ffffff;
+            position: absolute;
+            top: 45vh;
+            left: 6vw;
+        }
+
+        h2 span::before {
+            content: "";
+            height: 30px;
+            width: 2px;
+            position: absolute;
+            top: 50%;
+            right: -8px;
+            background: #ff3131;
+            transform: translateY(-45%);
+            animation: blink 0.7s infinite;
+        }
+
+        h2 span.stop-blinking::before {
+            animation: none;
+        }
+
+        @keyframes blink {
+            50% { opacity: 0 }
+        }
