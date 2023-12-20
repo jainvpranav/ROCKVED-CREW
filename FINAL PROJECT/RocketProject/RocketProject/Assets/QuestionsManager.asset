@@ -1,0 +1,265 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c6a2342a35f7b841a36c6d2edba9af2, type: 3}
+  m_Name: QuestionsManager
+  m_EditorClassIdentifier: 
+  allPossibleQuestions:
+  - questionText: What is the Square of 45?
+    allAnswers:
+    - answer: 2025
+      isCorrectAnswer: 1
+    - answer: 2052
+      isCorrectAnswer: 0
+    - answer: 2035
+      isCorrectAnswer: 0
+    - answer: 2055
+      isCorrectAnswer: 0
+  - questionText: What is the product of 16x14?
+    allAnswers:
+    - answer: 242
+      isCorrectAnswer: 0
+    - answer: 224
+      isCorrectAnswer: 1
+    - answer: 124
+      isCorrectAnswer: 0
+    - answer: 244
+      isCorrectAnswer: 0
+  - questionText: What is 4/29?
+    allAnswers:
+    - answer: 0.1278
+      isCorrectAnswer: 0
+    - answer: 0.2345
+      isCorrectAnswer: 0
+    - answer: 0.3426
+      isCorrectAnswer: 0
+    - answer: 0.1379
+      isCorrectAnswer: 1
+  - questionText: When was ISRO formed?
+    allAnswers:
+    - answer: 26 JAN 1970
+      isCorrectAnswer: 0
+    - answer: 15 AUG 1959
+      isCorrectAnswer: 0
+    - answer: 15 AUG 1969
+      isCorrectAnswer: 1
+    - answer: 27 DEC 1969
+      isCorrectAnswer: 0
+  - questionText: India's first satellite was launched by?
+    allAnswers:
+    - answer: SOVIET UNION
+      isCorrectAnswer: 1
+    - answer: USA
+      isCorrectAnswer: 0
+    - answer: CHINA
+      isCorrectAnswer: 0
+    - answer: 'INDIA '
+      isCorrectAnswer: 0
+  - questionText: What is the square of 75?
+    allAnswers:
+    - answer: 5652
+      isCorrectAnswer: 0
+    - answer: 5685
+      isCorrectAnswer: 0
+    - answer: 5625
+      isCorrectAnswer: 1
+    - answer: 5675
+      isCorrectAnswer: 0
+  - questionText: What is the product of 37x33?
+    allAnswers:
+    - answer: 1212
+      isCorrectAnswer: 0
+    - answer: 1221
+      isCorrectAnswer: 1
+    - answer: 2121
+      isCorrectAnswer: 0
+    - answer: 2421
+      isCorrectAnswer: 0
+  - questionText: What is 6/79?
+    allAnswers:
+    - answer: 0.0759
+      isCorrectAnswer: 1
+    - answer: 0.7654
+      isCorrectAnswer: 0
+    - answer: 0.7675
+      isCorrectAnswer: 0
+    - answer: 0.8976
+      isCorrectAnswer: 0
+  - questionText: Who is the first chairman of ISRO?
+    allAnswers:
+    - answer: APJ Abdul Kalam
+      isCorrectAnswer: 0
+    - answer: Vikram Sarabhai
+      isCorrectAnswer: 1
+    - answer: Satish Dhawan
+      isCorrectAnswer: 0
+    - answer: Mrinalini Sarabhai
+      isCorrectAnswer: 0
+  - questionText: When was the first SLV formed?
+    allAnswers:
+    - answer: 1989
+      isCorrectAnswer: 0
+    - answer: 1979
+      isCorrectAnswer: 1
+    - answer: 1988
+      isCorrectAnswer: 0
+    - answer: 1969
+      isCorrectAnswer: 0
+  - questionText: What is the square of 85?
+    allAnswers:
+    - answer: 7252
+      isCorrectAnswer: 0
+    - answer: 8575
+      isCorrectAnswer: 0
+    - answer: 6985
+      isCorrectAnswer: 0
+    - answer: 7225
+      isCorrectAnswer: 1
+  - questionText: What is the product of 42x48?
+    allAnswers:
+    - answer: 2018
+      isCorrectAnswer: 0
+    - answer: 3018
+      isCorrectAnswer: 0
+    - answer: 2016
+      isCorrectAnswer: 1
+    - answer: 2022
+      isCorrectAnswer: 0
+  - questionText: What is 9/89?
+    allAnswers:
+    - answer: 0.1111
+      isCorrectAnswer: 0
+    - answer: 0.0211
+      isCorrectAnswer: 0
+    - answer: 0.1011
+      isCorrectAnswer: 1
+    - answer: 0.1101
+      isCorrectAnswer: 0
+  - questionText: When was Chandrayaan-1 launched?
+    allAnswers:
+    - answer: 2005
+      isCorrectAnswer: 0
+    - answer: 2006
+      isCorrectAnswer: 0
+    - answer: 2007
+      isCorrectAnswer: 0
+    - answer: 2008
+      isCorrectAnswer: 1
+  - questionText: Which was the first satellite launch center in INDIA?
+    allAnswers:
+    - answer: SRIHARIKOTA
+      isCorrectAnswer: 1
+    - answer: THIRUVANANTHAPURAM
+      isCorrectAnswer: 0
+    - answer: BENGALURU
+      isCorrectAnswer: 0
+    - answer: CHENNAI
+      isCorrectAnswer: 0
+  - questionText: What is the square of 115?
+    allAnswers:
+    - answer: 10225
+      isCorrectAnswer: 0
+    - answer: 13225
+      isCorrectAnswer: 1
+    - answer: 14555
+      isCorrectAnswer: 0
+    - answer: 11565
+      isCorrectAnswer: 0
+  - questionText: What is product of 74x76?
+    allAnswers:
+    - answer: 5624
+      isCorrectAnswer: 1
+    - answer: 5426
+      isCorrectAnswer: 0
+    - answer: 5464
+      isCorrectAnswer: 0
+    - answer: 7674
+      isCorrectAnswer: 0
+  - questionText: What is 5/49?
+    allAnswers:
+    - answer: 0.1024
+      isCorrectAnswer: 0
+    - answer: 0.2430
+      isCorrectAnswer: 0
+    - answer: 0.2020
+      isCorrectAnswer: 0
+    - answer: 0.1020
+      isCorrectAnswer: 1
+  - questionText: What is the expansion of PSLV?
+    allAnswers:
+    - answer: Polar Satellite Light vehicle
+      isCorrectAnswer: 0
+    - answer: Polar Space Launch Vehicle
+      isCorrectAnswer: 0
+    - answer: Polar Satellite Launch Vehicle
+      isCorrectAnswer: 1
+    - answer: Polar Space Light Vehicle
+      isCorrectAnswer: 0
+  - questionText: Which is the second Lunar Mission?
+    allAnswers:
+    - answer: Mangalyaan
+      isCorrectAnswer: 0
+    - answer: Chandrayaan-2
+      isCorrectAnswer: 1
+    - answer: LVM3-(CARE)
+      isCorrectAnswer: 0
+    - answer: GSAT-30
+      isCorrectAnswer: 0
+  - questionText: What is the square of 135?
+    allAnswers:
+    - answer: 18225
+      isCorrectAnswer: 1
+    - answer: 18525
+      isCorrectAnswer: 0
+    - answer: 16252
+      isCorrectAnswer: 0
+    - answer: 19555
+      isCorrectAnswer: 0
+  - questionText: What is the product of 52x58?
+    allAnswers:
+    - answer: 3020
+      isCorrectAnswer: 0
+    - answer: 2018
+      isCorrectAnswer: 0
+    - answer: 3016
+      isCorrectAnswer: 1
+    - answer: 3002
+      isCorrectAnswer: 0
+  - questionText: What is 7/19?
+    allAnswers:
+    - answer: 0.8642
+      isCorrectAnswer: 0
+    - answer: 0.3684
+      isCorrectAnswer: 1
+    - answer: 0.6543
+      isCorrectAnswer: 0
+    - answer: 0.2435
+      isCorrectAnswer: 0
+  - questionText: Who is the present Chairperson of ISRO?
+    allAnswers:
+    - answer: B N Suresh
+      isCorrectAnswer: 0
+    - answer: A S Kiran Kumar
+      isCorrectAnswer: 0
+    - answer: K Radhakrishnan
+      isCorrectAnswer: 0
+    - answer: Kailasavadivoo Sivan
+      isCorrectAnswer: 1
+  - questionText: What was the former name of ISRO?
+    allAnswers:
+    - answer: 'INDIAN NATIONAL COMMITTEE FOR SPACE RESEARCH '
+      isCorrectAnswer: 1
+    - answer: 'INDIAN NATIONAL COMMITTEE OF SPACE RESEARCH '
+      isCorrectAnswer: 0
+    - answer: 'INDIAN NATIONAL COMMISSION FOR SPACE RESEARCH '
+      isCorrectAnswer: 0
+    - answer: 'INDIAN NATIONAL COMMISSION OF SPACE RESEARCH '
+      isCorrectAnswer: 0
