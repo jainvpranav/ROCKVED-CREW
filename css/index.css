@@ -8,7 +8,7 @@
             font-family: 'Montserrat';
         }
         body {
-            background-image: url('./bg.jpg');
+            background-image: url('../assets/landing/bg.jpg');
             background-color: #000000;
             color: white;
         }
