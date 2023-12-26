@@ -4,23 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ROCKVED</title>
-    <link rel="stylesheet" href="./css/index.css">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Pixelify+Sans:wght@600&family=Poppins:wght@300&display=swap');
+    body {
+        background-image: url('./assets/landing/bg.jpg');
+        /* background-color: #000000; */
+        color: white;
+        font-family: 'Pixelify Sans';
+        overflow: hidden;
+        user-select: none;
+    }
+    .container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    </style>
 </head>
 <body>
-    <div id="imgs">
-        <img src="./assets/landing/moon.gif"  class="gif moon" alt="">
-        <img src="./assets/landing/uranus.gif" class="gif uranus" alt="">
-        <img src="./assets/landing/galaxy.gif" class="gif galaxy" alt="">
-        <img src="./assets/landing/blackhole.gif" class="gif blackhole" alt="">
-        <img src="./assets/landing/telescope.gif" class="gif telescope" alt="">
-        <img src="./assets/landing/science-fiction.gif" class="gif science-fiction" alt="">
-        <img src="./assets/landing/astronaut.gif" class="gif astronaut" alt="">
+    <div class="container">
+        <h1>Welcome</h1>
+        <p>We are initializing</p>
     </div>
-    <img src="./assets/landing/rocket.gif" alt="rocket" id="rocket" class="gif rocket">
-    <img src="./assets/landing/bgw.png" class="pathway" alt="">
-    <h1 class="rockved">ROCKVED</h1>
-    <h2><span></span></h2>
-    <button class="launch" id="launch">Launch</button> 
-    <script type="module" src="./js/index.js"></script>  
+    <script>
+        setTimeout(()=> {
+        // In index2.html
+        if (window.innerWidth < 1024) {
+            window.location = "index2.html";
+        }
+        // In index1.html
+        if (window.innerWidth >= 1024) {
+            window.location = "index1.html";
+        }
+        }, 1500)
+    </script>
 </body>
 </html>
